@@ -1,0 +1,12 @@
+@import url('base.css');
+
+.promocoes .promocao {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.promocoes .promocao img {
+    max-width: 100%;
+}

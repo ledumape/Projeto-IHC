@@ -1,0 +1,15 @@
+@import url('base.css');
+
+.conta-detalhes h3 {
+    margin-top: 1rem;
+}
+
+#pedidos {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pedidos li {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 0;
+}

@@ -1,0 +1,11 @@
+@import url('base.css');
+
+.produto-detalhe {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.produto-detalhe img {
+    max-width: 100%;
+}

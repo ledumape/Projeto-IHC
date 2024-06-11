@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online - Promoções</title>
+    <link rel="stylesheet" href="promocoes.css">
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    main {
+        flex: 1;
+        padding-bottom: 100px; /* Aumentado o padding-bottom */
+    }
+
+    .produto-detalhe img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    footer {
+        background-color: #4b0082;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+<body>
+    <header>
+        <h1>Promoções</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="busca.html">Busca</a></li>
+                <li><a href="conta.html">Minha Conta</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="promocoes">
+            <h2>Ofertas Especiais</h2>
+            <div id="listaPromocoes">
+                <!-- Lista de promoções será inserida aqui -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Anão anoes</p>
+    </footer>
+    <script src="promocao.js"></script>
+</body>
+</html>

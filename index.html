@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online - Produto</title>
+    <link rel="stylesheet" href="produto.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            flex: 1;
+            padding-bottom: 100px;
+        }
+
+        .produto-detalhe {
+            margin-bottom: 40px; /* Ajuste para espaço entre produtos */
+            border: none; /* Remove bordas da seção */
+            padding: 0; /* Remove padding da seção */
+        }
+
+        .produto-detalhe img {
+            max-width: 100%;
+            height: auto;
+            border: none; /* Remove bordas da imagem */
+        }
+
+        .produto-detalhe h2 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px; /* Adicionado margem superior */
+        }
+
+        .produto-detalhe p.descricao {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .produto-detalhe p.preco {
+            font-size: 18px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #4b0082;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+        }
+
+        .carousel {
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            border: none; /* Remove bordas da imagem */
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        /* Botão de Voltar ao Topo */
+        #backToTopBtn {
+            display: none; /* Escondido por padrão */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #4b0082;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        #backToTopBtn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anão anoes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn btn-light">Home</a></li>
+                <li><a href="busca.html" class="btn btn-light">Busca</a></li>
+                <li><a href="conta.html" class="btn btn-light">Minha Conta</a></li>
+                <li><a href="faq.html" class="btn btn-light">FAQ</a></li>
+                <li><a href="sobre.html" class="btn btn-light">Sobre</a></li>
+                <li><a href="contato.html" class="btn btn-light">Contato</a></li>
+                <li><a href="promocoes.html" class="btn btn-light">Promoções</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Carrossel -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imagens/anao.jpg" alt="Produto 1">
+                    <div class="carousel-caption">
+                        <h2>Cachaceiro</h2>
+                        <p class="descricao">Conheça nosso carismático e único anão cachaceiro!...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagens/Foto-02.jpg" alt="Produto 2">
+                    <div class="carousel-caption">
+                        <h2>Produto 2</h2>
+                        <p class="descricao">Conheça o Keke, nosso anão dançarino que transforma qualquer evento em uma verdadeira festa!...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagens/Foto-01.jpg" alt="Produto 3">
+                    <div class="carousel-caption">
+                        <h2>Produto 3</h2>
+                        <p class="descricao">Apresentamos Thiago, o anão especialista em pole dance que traz um toque super-heroico para qualquer evento!...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagens/Foto-04.jpg" alt="Produto 4">
+                    <div class="carousel-caption">
+                        <h2>Produto 4</h2>
+                        <p class="descricao">Conheça Pitoco, nosso anão especialista em calistenia, conhecido por ser o menor da loja, mas com um talento gigantesco!...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imagens/Foto-03.jpg" alt="Produto 5">
+                    <div class="carousel-caption">
+                        <h2>Produto 5</h2>
+                        <p class="descricao">Apresentamos Zezinho, nosso anão especialista em direito que promete condenar a rapaziada a se divertir sem limites em sua festa!...</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        
+        <!-- Produtos -->
+        <section class="produto-detalhe">
+            <img src="imagens/anao.jpg" alt="teste">
+            <h2>Cachaceiro</h2>
+            <p class="descricao">Conheça nosso carismático e único anão cachaceiro! Com uma altura de pouco mais de um metro, ele traz uma presença inesquecível e uma alegria contagiante para qualquer evento. Vestido com trajes típicos de boteco, incluindo uma camisa xadrez, suspensórios e um chapéu de palha, ele é a alma da festa. Seu bigode bem aparado e seu sorriso largo são complementados por um olhar brilhante e divertido. Especialista em entreter convidados, ele serve bebidas com uma destreza impressionante, contando piadas e fazendo malabarismos com garrafas e copos. Além de ser um excelente barman, ele também pode conduzir jogos de bebida e dançar músicas populares, garantindo que todos no evento se divirtam. Contrate nosso anão cachaceiro para fazer do seu evento uma ocasião memorável e cheia de risadas.</p>
+            <p class="preco">Preço: R$ 99,99</p>
+            <label for="quantidade1">Quantidade:</label>
+            <input type="number" id="quantidade1" name="quantidade1" min="1" max="10">
+            <div class="btn-group">
+                <button class="btn btn-dark add-carrinho" data-id="1">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section class="produto-detalhe">
+            <img src="imagens/Foto-02.jpg" alt="Produto 2">
+            <h2>Anão Keke</h2>
+            <p class="descricao">Conheça o Keke, nosso anão dançarino que transforma qualquer evento em uma verdadeira festa! Com sua estatura marcante de pouco mais de um metro, Keke traz uma energia vibrante e contagiante para a pista de dança. Vestido com uma camisa xadrez azul e branca, complementada por um estiloso gorro vermelho, ele é o destaque em qualquer celebração. Keke possui um sorriso cativante e olhos brilhantes, refletindo seu espírito alegre e entusiasta. Ele é um mestre na arte da dança, capaz de executar uma variedade de estilos, desde danças populares até movimentos mais complexos, garantindo entretenimento e diversão para todos os convidados. Além de dançar, Keke interage com o público, levando todos a se juntarem a ele na dança e criar momentos memoráveis. Contrate Keke, o anão dançarino, para adicionar um toque especial e inesquecível ao seu evento!.</p>
+            <p class="preco">Preço: R$ 149,99</p>
+            <label for="quantidade2">Quantidade:</label>
+            <input type="number" id="quantidade2" name="quantidade2" min="1" max="10">
+            <div class="btn-group">
+                <button class="btn btn-dark add-carrinho" data-id="2">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section class="produto-detalhe">
+            <img src="imagens/Foto-01.jpg" alt="Produto 3">
+            <h2>Anão Thiago</h2>
+            <p class="descricao">Apresentamos Thiago, o anão especialista em pole dance que traz um toque super-heroico para qualquer evento! Com sua estatura memorável e sua presença energética, Thiago se destaca não apenas por suas habilidades impressionantes no pole dance, mas também por seu traje icônico de Superman. Vestido com a capa azul e o "S" no peito, ele incorpora a alegria e a força do famoso super-herói, enquanto executa acrobacias e movimentos elegantes ao redor do poste.</p>
+            <p class="descricao">Thiago tem uma habilidade natural para capturar a atenção de todos na sala, com uma performance que combina força, flexibilidade e uma dose generosa de carisma. Seu show é uma mistura perfeita de entretenimento e arte, ideal para eventos que buscam oferecer uma experiência única e vibrante. Ele não só domina a técnica do pole dance, mas também sabe como interagir com o público, fazendo com que cada apresentação seja personalizada e inesquecível.</p>
+            <p class="descricao">Contrate Thiago para o seu próximo evento e deixe que esse super-herói do pole dance eleve a diversão a novas alturas, garantindo uma noite de espetáculo e magia!.</p>
+            <p class="preco">Preço: R$ 199,99</p>
+            <label for="quantidade3">Quantidade:</label>
+            <input type="number" id="quantidade3" name="quantidade3" min="1" max="10">
+            <div class="btn-group">
+                <button class="btn btn-dark add-carrinho" data-id="3">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section class="produto-detalhe">
+            <img src="imagens/Foto-04.jpg" alt="Produto 4">
+            <h2>Anão Pitoco</h2>
+            <p class="descricao">Conheça Pitoco, nosso anão especialista em calistenia, conhecido por ser o menor da loja, mas com um talento gigantesco! Pitoco sempre chega aos eventos vestido como Homem-Aranha, completo com o traje vermelho e azul icônico e a máscara que captura a essência do super-herói ágil e destemido.</p>
+            <p class="descricao">Pitoco utiliza suas habilidades excepcionais em calistenia para realizar movimentos que desafiam a gravidade e demonstram incrível força e flexibilidade. Ele combina acrobacias, escaladas e equilíbrio em uma rotina dinâmica que captura a admiração de todos os presentes. O traje de Homem-Aranha não só adiciona um elemento visual emocionante às suas performances, mas também enfatiza sua agilidade e habilidade para escalar e se mover com a leveza de um verdadeiro super-herói.</p>
+            <p class="descricao">Ideal para eventos que procuram entretenimento dinâmico e inspirador, Pitoco não apenas exibe sua maestria em calistenia, mas também interage com o público, encorajando-os a participar e experimentar a alegria do movimento. Contrate Pitoco, o anão especialista em calistenia vestido de Homem-Aranha, para trazer um espetáculo de força, habilidade e diversão ao seu próximo evento!</p>
+            <p class="preco">Preço: R$ 249,99</p>
+            <label for="quantidade4">Quantidade:</label>
+            <input type="number" id="quantidade4" name="quantidade4" min="1" max="10">
+            <div class="btn-group">
+                <button class="btn btn-dark add-carrinho" data-id="4">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section class="produto-detalhe">
+            <img class="produto5-img" src="imagens/Foto-03.jpg" alt="Produto 5">
+            <h2>Produto 5</h2>
+            <p class="descricao">Apresentamos Zezinho, nosso anão especialista em direito que promete condenar a rapaziada a se divertir sem limites em sua festa! Zezinho sempre marca presença com seu elegante terno, completo com gravata e um distintivo broche de lapela, transmitindo uma imagem de autoridade e sofisticação.</p>
+            <p class="descricao">Com um diploma em direito e uma habilidade inata para entreter, Zezinho usa seu conhecimento jurídico de maneira criativa e divertida. Ele atua como o "juiz" da festa, dando "sentenças" que garantem que todos se divirtam. Com um martelo de brinquedo, ele "julga" os convidados em casos hilários e festivos, como quem deve ser o próximo a dançar ou quem precisa contar a melhor piada.</p>
+            <p class="descricao">Zezinho não só traz uma atmosfera de alegria com suas brincadeiras jurídicas, mas também sabe como manter todos envolvidos e animados. Ele é perfeito para eventos que procuram um toque de originalidade e humor, garantindo que todos os "réus" deixem a festa com um sorriso no rosto.</p>
+            <p class="descricao">Contrate Zezinho, o anão especialista em direito vestido de terno, e deixe que ele condene seus convidados a uma noite inesquecível de diversão e risadas!.</p>
+            <p class="preco">Preço: R$ 299,99</p>
+            <label for="quantidade5">Quantidade:</label>
+            <input type="number" id="quantidade5" name="quantidade5" min="1" max="10">
+            <div class="btn-group">
+                <button class="btn btn-dark add-carrinho" data-id="5">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Anão anoes</p>
+    </footer>
+    <!-- Botão de Voltar ao Topo -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo"><i class="fas fa-arrow-up"></i></button>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        // Mostrar o botão quando rolar para baixo
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        // Função para voltar ao topo
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

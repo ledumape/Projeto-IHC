@@ -1,0 +1,16 @@
+@import url('base.css');
+
+.busca {
+    margin-bottom: 1rem;
+}
+
+.resultados .produto {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.resultados .produto img {
+    max-width: 100%;
+}

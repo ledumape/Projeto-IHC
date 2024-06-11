@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online - Minha Conta</title>
+    <link rel="stylesheet" href="conta.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Conta</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="busca.html">Busca</a></li>
+                <li><a href="conta.html">Minha Conta</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="conta-detalhes">
+            <h2>Bem-vindo, [Nome do Usuário]</h2>
+            <h3>Informações da Conta</h3>
+            <p>Email: usuario@example.com</p>
+            <button onclick="alterarEmail()">Alterar Email</button>
+            
+            <h3>Pedidos Anteriores</h3>
+            <ul id="pedidos">
+                <!-- Lista de pedidos anteriores será inserida aqui -->
+            </ul>
+            
+            <h3>Preferências de Comunicação</h3>
+            <label for="newsletter">Receber Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" checked>
+            <button onclick="salvarPreferencias()">Salvar Preferências</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Anão anoes</p>
+    </footer>
+    <script src="teste.js"></script>
+</body>
+</html>

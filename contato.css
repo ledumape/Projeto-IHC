@@ -1,0 +1,26 @@
+@import url('base.css');
+
+#contatoForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contatoForm label {
+    margin-top: 0.5rem;
+}
+
+#contatoForm input, #contatoForm textarea {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contatoForm button {
+    margin-top: 1rem;
+}
+
+#feedback {
+    margin-top: 1rem;
+    color: green;
+}
